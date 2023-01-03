@@ -106,7 +106,7 @@ checkLocationDetail(X):- properti(X), kepemilikanProperti(X,Pemilik),
 
     write('Kepemilikan         : '), write(Pemilik), nl,
     write('Biaya Sewa Saat Ini : '), biayaSewaProperti(X, BiayaSewa), write(BiayaSewa), nl,
-    write('Biaya Akuisisi      : '), biayaAkuisisiProperti(X, BiayaAkuisisi), Biaya is BiayaAkuisisi, write(Biaya), nl,
+    write('Biaya Akuisisi      : '), biayaAkuisisiProperti(X, BiayaAkuisisi), Biaya = BiayaAkuisisi, write(Biaya), nl,
     write('Tingkatan Properti  : '), tingkatanProperti(X, TingkatanProperti), write(TingkatanProperti), nl, !.
 
 checkLocationDetail(X):- properti(X),
